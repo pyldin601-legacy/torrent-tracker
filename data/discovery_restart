@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+my $proc = 'discovery.pl';
+my $exec = '/usr/bin/perl';
+
+my @list = `ps ax -o pid,command`;
+
+foreach $item(@list) {
+	chomp $item;
+	@parts = split(' ', $item, 2);
+	($pid, $cmd) = @parts;
+	if((index($cmd, $proc) >= 0) && (index($cmd, $exec) >= 0)) {
+		system("kill $pid");
+	}
+}
+
+system("./$proc");
+

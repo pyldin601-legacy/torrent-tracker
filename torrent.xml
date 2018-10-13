@@ -1,0 +1,127 @@
+<torrent:TORRENT xmlns:torrent="http://xmlns.ezrss.it/0.1/">
+
+	<torrent:Class torrent:about="http://xmlns.ezrss.it/0.1/#torrent">
+		<torrent:isDefinedBy torrent:resource="http://xmlns.ezrss.it/0.1/#"/>
+		<torrent:label>torrent</torrent:label>
+		<torrent:comment>
+			The core torrent namespace class. All classes and properties derive from this.
+		</torrent:comment>
+	</torrent:Class>
+	
+	<torrent:Property torrent:about="http://xmlns.ezrss.it/0.1/#fileName">
+		<torrent:isDefinedBy torrent:resource="http://xmlns.ezrss.it/0.1/#"/>
+		<torrent:label>fileName</torrent:label>
+		<torrent:comment>
+			The name of the torrent file.
+		</torrent:comment>
+	</torrent:Property>
+	
+	<torrent:Property torrent:about="http://xmlns.ezrss.it/0.1/#contentLength">
+		<torrent:isDefinedBy torrent:resource="http://xmlns.ezrss.it/0.1/#"/>
+		<torrent:label>contentLength</torrent:label>
+		<torrent:comment>
+			The content length of the data stored within the torrent file.
+		</torrent:comment>
+	</torrent:Property>
+	
+	<torrent:Property torrent:about="http://xmlns.ezrss.it/0.1/#infoHash">
+		<torrent:isDefinedBy torrent:resource="http://xmlns.ezrss.it/0.1/#"/>
+		<torrent:label>infoHash</torrent:label>
+		<torrent:comment>
+			This is a HEX/SHA1 value of the files metadata.
+		</torrent:comment>
+	</torrent:Property>
+	
+	<torrent:Property torrent:about="http://xmlns.ezrss.it/0.1/#magnetURI">
+		<torrent:isDefinedBy torrent:resource="http://xmlns.ezrss.it/0.1/#"/>
+		<torrent:label>magnetURI</torrent:label>
+		<torrent:comment>
+			Magnet URI compliant string. Example: magnet:?xt=btih:(HEX)&amp;dn=(NAME)
+		</torrent:comment>
+	</torrent:Property>
+
+	<torrent:Class torrent:about="http://xmlns.ezrss.it/0.1/#trackers">
+		<torrent:isDefinedBy torrent:resource="http://xmlns.ezrss.it/0.1/#"/>
+		<torrent:label>trackers</torrent:label>
+		<torrent:comment>
+			An array of trackers assigned to the torrent.
+		</torrent:comment>
+	</torrent:Class>
+
+	<torrent:Class torrent:about="http://xmlns.ezrss.it/0.1/#group">
+		<torrent:isDefinedBy torrent:resource="http://xmlns.ezrss.it/0.1/#"/>
+		<torrent:label>group</torrent:label>
+		<torrent:comment>
+			group element of trackers, use to determine if the group are sequential or random.
+		</torrent:comment>
+	</torrent:Class>
+
+	<torrent:Parameter torrent:about="http://xmlns.ezrss.it/0.1/#group,#order">
+		<torrent:isDefinedBy torrent:resource="http://xmlns.ezrss.it/0.1/#"/>
+		<torrent:label>order</torrent:label>
+		<torrent:comment>
+			Options: random, ordered.
+			Tells whether the list should be treated randomly or in order of entry.
+		</torrent:comment>
+	</torrent:Parameter>
+	
+	<torrent:Property torrent:about="http://xmlns.ezrss.it/0.1/#tracker">
+		<torrent:isDefinedBy torrent:resource="http://xmlns.ezrss.it/0.1/#"/>
+		<torrent:label>tracker</torrent:label>
+		<torrent:comment>
+			The URL address of the tracker. Accepts the parameters seeds, peers.
+		</torrent:comment>
+	</torrent:Property>
+	
+	<torrent:Parameter torrent:about="http://xmlns.ezrss.it/0.1/#tracker,seeds">
+		<torrent:isDefinedBy torrent:resource="http://xmlns.ezrss.it/0.1/#"/>
+		<torrent:label>seeds</torrent:label>
+		<torrent:comment>
+			The current count of seeds listed on the tracker.
+		</torrent:comment>
+	</torrent:Parameter>
+	
+	<torrent:Parameter torrent:about="http://xmlns.ezrss.it/0.1/#tracker,peers">
+		<torrent:isDefinedBy torrent:resource="http://xmlns.ezrss.it/0.1/#"/>
+		<torrent:label>peers</torrent:label>
+		<torrent:comment>
+			The current count of peers listed on the tracker.
+		</torrent:comment>
+	</torrent:Parameter>
+
+</torrent:TORRENT>
+<!--
+	<?xml version="1.0" encoding="UTF-8" ?>
+	<!DOCTYPE torrent PUBLIC "-//bitTorrent//DTD torrent 0.1//EN" "http://xmlns.ezrss.it/0.1/dtd/">
+	<rss version="2.0">
+		<channel>
+			<item>
+				<title><![CDATA[Californication - Home Sweet Home 4x3 [HDTV - FQM]]]></title>
+				<link>http://torrent.zoink.it/Californication.S04E03.Home.Sweet.Home.HDTV.XviD-FQM.[eztv].torrent</link>
+				<category domain="http://eztv.it/shows/40/californication/"><![CDATA[TV Show / Californication]]></category>
+				<pubDate>Sun, 23 Jan 2011 20:57:42 -0500</pubDate>
+				<description><![CDATA[Show Name: Californication; Episode Title: Home Sweet Home; Season: 4; Episode: 3]]></description>
+				<enclosure url="http://torrent.zoink.it/Californication.S04E03.Home.Sweet.Home.HDTV.XviD-FQM.[eztv].torrent" length="9856" type="application/x-bittorrent" />
+				<comments>http://eztv.it/forum/discuss/25272/</comments>
+				<guid>http://eztv.it/ep/25272/californication-s04e03-home-sweet-home-hdtv-xvid-fqm/</guid>
+				<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+					<fileName><![CDATA[Californication.S04E03.Home.Sweet.Home.HDTV.XviD-FQM.[eztv].torrent]]></fileName>
+					<contentLength>244607760</contentLength>
+					<infoHash>EEBB6DD2FE91A5C26307C5F5AB8778BEFC184D8C</infoHash>
+					<magnetURI><![CDATA[magnet:?xt=urn:btih:525W3UX6SGS4EYYHYX22XB3YX36BQTMM&dn=Californication.S04E03.Home.Sweet.Home.HDTV.XviD-FQM]]></magnetURI>
+					<trackers>
+						<group order="ordered">
+							<tracker seeds="359" peers="3961"><![CDATA[udp://tracker.openbittorrent.com:80/announce]]></tracker>
+						</group>
+						<group order="random">
+							<tracker seeds="365" peers="4451"><![CDATA[http://tracker.publicbt.com/announce]]></tracker>
+							<tracker seeds="367" peers="4434"><![CDATA[udp://tracker.publicbt.com:80/announce]]></tracker>
+							<tracker seeds="565" peers="6406"><![CDATA[udp://tracker.istole.it:80/announce]]></tracker>
+							<tracker seeds="0" peers="0"><![CDATA[http://tracker.hexagon.cc:2710/announce]]></tracker>
+						</group>
+					</trackers>
+				</torrent>
+			</item>
+		</channel>
+	</rss>
+-->
